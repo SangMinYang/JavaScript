@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시작하기t</title>
+</head>
+<body>
+<h2 id="title">자바스크립트</h2>
+<ul class="list">
+    <script>
+        "Use strict";
+        let score=0;
+       // 자바 스크립트는 변수를 let,const 로 선언하지 않아도 오류 아닙니다.
+    //    -> 개발과정 어세 문제가 발생.변수 let,const 선언 강요.
+       let result = score <0 || score>100;
+            //  관계식1 논리연산(AND 또는 OR) 관계식2
+            //  score >= 70 && score< 80
+            // && 둘다 만족하는(and) || 둘중에 하나 만족하는() ==> 결과 ture(참)
+            if(result)
+    // (result) 는 실행을 결정하기 위한 조건식-참 또는 거짓으로 결과가 나오는 식
+            console.log('잘못된 점수입니다')
+        else
+        console.log('올바른점수입니다') 
+    </script>
+">
+    <li>웹 브라우저에서 동적인 기능을 구현할 수 있는 프로그래밍 언어입니다. </li>
+    <li>스크립트 언어 : 이미 존재하는 소프트웨어를 제어하기 위한 용도로 쓰이는 언어</li>
+    <li> HTML과 CSS가 내용과 디자인을 담당한다면, JavaScript는 동작을 
+담당합니다.</li>
+</ul class="list">
+<hr>
+    <h3 id="title">전역 객체</h3>
+    <p>객체는 여러가지 데이터를 저장하는 형십입니다. 데이터를 구별하는 이름이 필요합니다
+    그이름들을 속성,프로퍼티 라고 합니다. 브라우저의 전역 객체는 여러속성을 갖습니다
+    <p>브라우저의 전역 객체는 브라우저를 제어하는 기능도 갖고 있습니다
+        이 기능은 메소드라고 부릅니다
+        <p>-> 객체의 구성 요소 : 속성과 메소드 입니다.</p>
+
+    <ul>
+        <li class="list">screen</li>
+        <li>window</li>
+        <li>document</li>
+    </ul>
+    <!-- document 객체의 주요 메소드 :
+     1.요소 1개 가ㅣ져오기
+     1.document.getElementById( ) 
+     2.document.querySelector('title')  
+     2.document.querySelector('ul') 선택자 
+     2.document.querySelector('#title') 선택자 
+    2.여러개 요소 가져오기
+       document,querySelectorAll('ui') 선택자
+       document,querySelectorAll(',list') 선택자
+     3.document.quryElementByClass Name( 'list')
+
+     2. -->
+    
+</body>
+</html> 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>06.23</h4>
+    <button id="naverBtn">https://www.naver.com</button>
+    <button id="googleBtn">htpps://www.google.com</button>
+    <button id="githubBtn">https://www.github.com</button>
+    <button id="daumBtn">https://wwww.daum.net</button>
+    <hr>
+    <h3>이벤트 전파 요소</h3>
+    <p>자식요소가 많고 작업 기능이 같을떄-입력값은 다름</p>
+    <p>부모요소에 이벤트 리스너를 등록하여 자식이벤트를 처리 -자식 이벤트가 생기면
+        부모요소로 전파가 되므로 가능합니다.
+    </p>
+    <div id="parent" style="background-color: aliceblue; padding: 20px;">
+        <button id="https://www.naver.com">네이버</button>
+    <button id="htpps://www.google.com">구글</button>
+    <button id="https://www.github.com">깃허브</button>
+    <button id="https://wwww.daum.net">다음</button>
+
+    </div>
+
+    <script>
+        "use stript"
+        // 변수 선언을 강제.(이것 없으면 let,const 없이 변수 사용 가능함.)
+        // 이벤트 전파 예시 - parent 에 이벤트 리스터 등록하기
+        const parent = document.getElementById('parent')
+        parent.addEventListener('click',(event) =>{
+            console.log("이벤트 타입:",event.type);
+            console.log("클릭한 위치:",event.clienX,event.clientY);
+            console.log("클릭한 요소 이름:",event.target.tagName)
+            // if(event.target.tagName === 'BTTON')
+            // window.open(event.target.id,'_blank')
+              } )
+            //   화살표 함수 :fumction 키워드 생략하는 형식
+            // cont googleBtn = document.getElementById('googleBtn')
+            // 생략 가능 -> 많이 사용하는 키워드는 중복과 충돌 발생 -> 직접 선고(권고사항)
+    </script>
+</body>
+</html>
